@@ -1,2 +1,4 @@
 # Taller2-edd
-a work from edd course
+
+in this repository we'll add the code from work 2 from edd course
+

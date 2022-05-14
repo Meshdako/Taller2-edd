@@ -30,6 +30,6 @@ class Persona
 		Fecha getFechaNacimiento(){return fechaNacimiento;}
 
 		void verPersona();
-}
+};
 
 #endif //PERSONA_H

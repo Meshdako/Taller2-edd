@@ -24,6 +24,6 @@ class Fecha
 		int getAnho(){return aa;}
 
 		void verFecha();
-}
+};
 
 #endif //FECHA_H

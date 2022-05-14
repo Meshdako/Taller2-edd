@@ -28,6 +28,6 @@ class Direccion
 
 		//Métodos.
 		void verDireccion();
-}
+};
 
 #endif //DIRECCION_H

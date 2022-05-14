@@ -17,7 +17,7 @@ Direccion::Direccion(string a, int b, string c)
 	comuna = c;
 }
 
-void verDireccion()
+void Direccion::verDireccion()
 {
 	cout << "Direccion: " << calle << ", " << numero << ", " << comuna << endl;
 }

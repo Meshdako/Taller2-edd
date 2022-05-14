@@ -24,6 +24,6 @@ class Artista : public Persona
 		Fecha getFechaPresentacion(){return fechaPresentacion;}
 
 		void verArtista();
-}
+};
 
 #endif //ARTISTA_H

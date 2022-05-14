@@ -1,3 +1,7 @@
+#include "RUT.h"
+#include "Direccion.h"
+#include "Fecha.h"
+#include "Persona.h"
 #include "Artista.h"
 #include <iostream>
 

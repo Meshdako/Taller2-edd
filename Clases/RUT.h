@@ -21,6 +21,6 @@ class RUT
 
 		//Métodos
 		void verRUT();
-}
+};
 
 #endif //RUT_H

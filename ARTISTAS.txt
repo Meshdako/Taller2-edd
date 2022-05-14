@@ -1,0 +1,105 @@
+RUT;DV;NAC_DIA;NAC_MES;NAC_ANHO;NOMBRE;PATERNO;MATERNO;CALLE;NRO;COMUNA;EVEN_DIA;EVE_MES;EVE_ANHO;NOMBRE_ARTÍSTICO;ESTILO
+20858256;5;4;7;1983;Foo Fighters;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Foo Fighters;Rock alternativo
+18892568;7;1;10;1989;Martin Garrix ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Martin Garrix ;rap
+17513725;8;11;2;1995;Jane’s Addiction ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Jane’s Addiction ;electro-house
+21433776;5;29;8;1997;Justin Quiles ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Justin Quiles ;punk rock
+18569204;3;29;10;1990;Idles ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Idles ;electro-house
+23893908;7;28;5;1981;Cultura Profética ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Cultura Profética ;metal
+22480822;3;14;6;1999;Kaytranada ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Kaytranada ;Rock alternativo
+19978086;4;26;3;1996;Jhay Cortez ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Jhay Cortez ;electropop
+19821850;2;17;4;2002;Phoebe Bridgers ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Phoebe Bridgers ;Rock alternativo
+15205840;8;30;6;2001;Alexisonfire ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Alexisonfire ;electropop
+19291702;7;23;3;2002;Alessia Cara ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Alessia Cara ;rap
+19938173;5;31;10;1983;Remi Wolf ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Remi Wolf ;indie rock
+21729249;2;24;1;2004;The Wombats ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;The Wombats ;punk rock
+13621526;6;23;1;1984;Fernando Milagros ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Fernando Milagros ;punk rock
+21341343;1;30;7;2008;Pablo Vittar ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Pablo Vittar ;electropop
+13580912;8;5;10;1991;Trueno ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Trueno ;rap
+15274893;1;11;3;1984;Marky Ramone ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Marky Ramone ;metal
+21842550;5;13;4;2005;Channel Tres ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Channel Tres ;electro-house
+15301348;8;2;12;1996;Totó La Momposina ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Totó La Momposina ;punk rock
+21899460;7;13;6;1986;Saiko ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Saiko ;indie rock
+23641966;6;2;12;2006;Camila Moreno ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Camila Moreno ;electro-house
+18125592;4;26;6;1980;Natanael Cano ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Natanael Cano ;Rock alternativo
+21842069;3;13;11;1987;Polima Westcoast & Galee Galee ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Polima Westcoast & Galee Galee ;Rock alternativo
+22481924;7;16;6;1989;Francisco Victoria ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Francisco Victoria ;rap
+14089558;8;16;2;2005;Kiddtetoon ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Kiddtetoon ;Rock alternativo
+13760510;1;14;3;2009;Paula Cendejas ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Paula Cendejas ;punk rock
+24017142;8;11;6;1980;Flor de Rap ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Flor de Rap ;indie rock
+24119015;9;3;9;1994;Harry Nach ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Harry Nach ;rap
+19252955;5;25;8;2004;Rootz Hi-Fi ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Rootz Hi-Fi ;rap
+22487952;1;14;4;1983;Dulce y Agraz ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Dulce y Agraz ;Rock alternativo
+21166003;3;7;4;1999;Delic ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Delic ;Rock alternativo
+17351844;5;30;7;2006;The Alive ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;The Alive ;rap
+20661758;1;22;7;1990;Bocho ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Bocho ;indie rock
+19879951;8;14;3;2002;Temple Agents ;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Temple Agents ;electropop
+16367998;1;10;9;1988;Antónima;;;Parque Bicentenario;0;CERRILLOS;18;3;2022;Antónima;punk rock
+16692101;3;4;7;1990;Alesso ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Alesso ;electropop
+15827732;5;27;8;1994;Asap Rocky ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Asap Rocky ;Rock alternativo
+21144124;9;10;12;2004;Miley Cyrus ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Miley Cyrus ;rap
+22823728;8;3;6;2003;A Day to Reember ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;A Day to Remember ;metal
+20280551;2;29;11;1985;Deorro ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Deorro ;punk rock
+20894131;3;28;8;1983;Turnstile ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Turnstile ;electropop
+17477425;4;21;10;2010;Marina ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Marina ;metal
+19893213;3;10;6;1985;Goldfish ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Goldfish ;metal
+22688864;9;20;5;1999;Tiago PZK ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Tiago PZK ;metal
+23618131;1;25;9;1986;Beto Cuevas ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Beto Cuevas ;Rock alternativo
+22831355;9;24;5;1999;PAblo Chill-E ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;PAblo Chill-E ;metal
+19733562;9;28;11;1991;Rawayana ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Rawayana ;electropop
+17827902;8;4;4;2002;Javiera Mena ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Javiera Mena ;Rock alternativo
+19563827;3;31;8;1993;Cami ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Cami ;rap
+15676646;1;28;2;1984;BBS Paranoicos ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;BBS Paranoicos ;metal
+17756974;8;29;1;1989;Pedro Piedra ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Pedro Piedra ;electropop
+18850230;7;27;12;1983;Tai Verdes ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Tai Verdes ;electro-house
+15707844;7;27;11;1993;Tiro de Gracia ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Tiro de Gracia ;Rock alternativo
+15803672;3;24;5;2005;Boombox Cartel ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Boombox Cartel ;electropop
+14251333;3;20;8;2009;Cease ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Cease ;indie rock
+16700989;1;29;4;2008;Jesse Baez ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Jesse Baez ;metal
+21584979;8;13;10;1985;Hoppo! ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Hoppo! ;electro-house
+22745978;9;6;12;1986;Pascuala Ilabaca & Fauna ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Pascuala Ilabaca & Fauna ;punk rock
+24452648;7;30;5;2007;Yorka ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Yorka ;metal
+14139082;9;6;6;2000;Rubio ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Rubio ;indie rock
+14512414;5;21;7;2006;Javiera y Los Imposibles ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Javiera y Los Imposibles ;indie rock
+15472125;3;4;11;2001;Soulfia ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Soulfia ;metal
+16525806;9;22;9;1998;Rootz Hi-Fi ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Rootz Hi-Fi ;electro-house
+14264864;2;1;6;1980;Slowwkiss ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Slowwkiss ;electropop
+16179118;5;14;10;1994;Red Bull Batalla ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Red Bull Batalla ;Rock alternativo
+22112594;6;23;7;1999;Catana ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Catana ;rap
+22105291;2;4;12;1999;Soul de Lua ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Soul de Lua ;rap
+22447519;8;14;2;1992;Jotape Psycho ;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Jotape Psycho ;electropop
+21065561;9;14;11;1985;Liz Santibáñez;;;Parque Bicentenario;0;CERRILLOS;19;3;2022;Liz Santibáñez;electro-house
+16993803;2;1;11;1989;The Strokes ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;The Strokes ;Rock alternativo
+13928496;3;21;9;1986;Machine Gun Kelly ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Machine Gun Kelly ;Rock alternativo
+21038574;4;9;11;1980;Doja Cat ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Doja Cat ;metal
+19196160;4;31;11;1980;Nicki Nicole ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Nicki Nicole ;electropop
+14285996;4;25;1;1999;Kehlani ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Kehlani ;Rock alternativo
+17929076;9;30;6;1991;Chris Lagos ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Chris Lagos ;electro-house
+23657629;5;29;2;1994;LP ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;LP ;rap
+23901471;2;7;6;1992;Jack Harlow ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Jack Harlow ;Rock alternativo
+17171173;4;14;5;2002;Alan Walker ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Alan Walker ;rap
+17245428;5;10;2;1987;King Gizzard & Yhe Lizard Wizard ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;King Gizzard & Yhe Lizard Wizard ;punk rock
+23768755;5;27;4;1997;Ashnikko ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Ashnikko ;Rock alternativo
+13714979;3;24;8;1991;Alok ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Alok ;rap
+13674083;6;3;9;2008;Kramer ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Kramer ;rap
+17523826;8;15;3;1991;JXDN ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;JXDN ;rap
+16375652;4;23;3;1995;Marc Segui ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Marc Segui ;metal
+22861710;2;4;5;1988;Princesa Alba ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Princesa Alba ;punk rock
+23988646;2;29;10;2008;Marcianeke ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Marcianeke ;electro-house
+23751546;8;5;5;1987;Drefquila ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Drefquila ;electropop
+15097042;3;21;12;1997;Lucybell ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Lucybell ;electropop
+22193541;4;11;1;2005;Inti Histórico & Quilapayún ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Inti Histórico & Quilapayún ;punk rock
+22035203;6;7;11;2010;Micro TDH ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Micro TDH ;Rock alternativo
+15410354;1;16;6;2006;070 Shake ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;070 Shake ;Rock alternativo
+21412094;5;7;9;2007;Power Peralta ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Power Peralta ;electro-house
+22595136;2;4;2;1980;C-Funk ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;C-Funk ;electropop
+19055845;6;11;4;1986;Bitman ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Bitman ;electropop
+21721685;9;26;8;1992;Cimafunk ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Cimafunk ;metal
+14222551;9;28;4;1989;Mariel Mariel ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Mariel Mariel ;electropop
+17567440;5;18;7;1990;Girl Ultra ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Girl Ultra ;Rock alternativo
+16846595;1;12;1;1987;Nakeye ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Nakeye ;Rock alternativo
+19191701;4;25;11;2008;Silvestre y La Naranja ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Silvestre y La Naranja ;punk rock
+19979462;2;21;8;1988;Golden Dawn Arkestra ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Golden Dawn Arkestra ;electro-house
+19525635;7;24;6;2005;BMF Squad ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;BMF Squad ;electropop
+24171348;3;16;9;1985;Rootz Hi-Fi ;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Rootz Hi-Fi ;Rock alternativo
+17655497;1;21;12;1997;Ghetto Kids;;;Parque Bicentenario;0;CERRILLOS;20;3;2022;Ghetto Kids;indie rock
+

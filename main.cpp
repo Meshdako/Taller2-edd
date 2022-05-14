@@ -99,7 +99,7 @@ void Lectura()
 	int i, j;
 	i = j = 0;
 	
-	//Abrimos el archivo
+	//Abrimos el archivo ARTISTAS.txt
 	archivo.open("ARTISTAS.txt", ios::in);
 	
 	if(archivo.fail()){
@@ -109,11 +109,12 @@ void Lectura()
 
 	//Capturamos la primera línea del archivo, pero esta no se ocupará.
 	getline(archivo, linea);
-
-	//Variables para el arreglo artistas.
-	string RUN, DV, NAC_DIA, NAC_MES, NAC_ANHO, NOMBRE, PATERNO, MATERNO, CALLE, NRO, COMUNA, EVEN_DIA, EVE_MES, EVE_ANHO, NOMBRE_ARTISTICO, ESTILO;
+	
 	while(getline(archivo, linea)){
 		stringstream stream(linea);
+		
+		//Variables para el arreglo artistas.
+		string RUN, DV, NAC_DIA, NAC_MES, NAC_ANHO, NOMBRE, PATERNO, MATERNO, CALLE, NRO, COMUNA, EVEN_DIA, EVE_MES, EVE_ANHO, NOMBRE_ARTISTICO, ESTILO;
 
 		getline(stream, RUN, delimitador);
 		getline(stream, DV, delimitador);
@@ -168,6 +169,81 @@ void Lectura()
 	//Cerramos el archivo ARTISTAS.txt
 	archivo.close();
 
+	//Abrimos el archivo ASISTENTES.txt
+	archivo.open("ASISTENTES.txt", ios::in);
+
+	if(archivo.fail()){
+		cout << "Error: No se pudo abrir el archivo ASISTENTES.txt" << endl;
+		exit(1);
+	}
+
+	getline(archivo, linea);
+
+	while(getline(archivo, linea)){
+		stringstream stream(linea);
+		
+		//Variables para el arreglo artistas.
+		string RUN, DV, NOMBRES, PATERNO, MATERNO, NAC_DIA, NAC_MES, NAC_ANHO, DIRECCION, NRO, COMUNA, TIPO_ENTRADA, EVENTO_DD, EVENTO_MM, EVENTO_AA, OCUPADA;
+
+		getline(stream, RUN, delimitador);
+		getline(stream, DV, delimitador);
+
+		getline(stream, NOMBRES, delimitador);
+		getline(stream, PATERNO, delimitador);
+		getline(stream, MATERNO, delimitador);
+
+		getline(stream, NAC_DIA, delimitador);
+		getline(stream, NAC_MES, delimitador);
+		getline(stream, NAC_ANHO, delimitador);
+
+		getline(stream, DIRECCION, delimitador);
+		getline(stream, NRO, delimitador);
+		getline(stream, COMUNA, delimitador);
+
+		getline(stream, TIPO_ENTRADA, delimitador);
+
+		getline(stream, EVENTO_DD, delimitador);
+		getline(stream, EVENTO_MM, delimitador);
+		getline(stream, EVENTO_AA, delimitador);
+
+		getline(stream, OCUPADA, delimitador);
+		
+		long Aux1;
+		int Aux2, Aux3, Aux4, Aux5, Aux6, Aux7, Aux8, Aux9, Aux10, Aux11;
+
+		Aux1 = stol(RUN);
+		if(DV == "K" || DV == "k")
+			DV = "0";
+		else{
+			if(DV == "-")
+				DV = "0";
+		}
+		Aux2 = stoi(DV);
+		RUT RunAux(Aux1, Aux2);
+		cout << Aux1 << "-" << Aux2 << endl;
+		string NombreCompleto = NOMBRES + " " + PATERNO + " " + MATERNO;
+
+		Aux3 = stoi(NAC_DIA);
+		Aux4 = stoi(NAC_MES);
+		Aux5 = stoi(NAC_ANHO);
+		Fecha FechaAux1(Aux1, Aux2, Aux3);
+		cout << Aux3 << "/" << Aux4 << "/" << Aux5 << endl;
+		Aux6 = stoi(NRO);
+		Direccion DirAux(DIRECCION, Aux6, COMUNA);
+
+		Aux7 = stoi(EVENTO_DD);
+		Aux8 = stoi(EVENTO_MM);
+		Aux9 = stoi(EVENTO_AA);
+		Fecha FechaAux2(Aux7, Aux8, Aux9);
+
+		Aux10 = stoi(TIPO_ENTRADA);
+		Aux11 = stoi(OCUPADA);
+
+		Asistente AsisAux(NombreCompleto, RunAux, DirAux, FechaAux1, Aux10, FechaAux2, Aux11);
+		Asistentes[j] = AsisAux;
+
+		j++;
+	}
 	Menu(i, j);
 }
 

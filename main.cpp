@@ -29,32 +29,127 @@ Asistente Asistentes[1000];
 Artista Artistas[105];
 
 //Funciones
-/* void CantidadAsistentes();
-void AsistentesComuna();
-void ConvocatoriaArtistas();
-void TipodeEntradas();
-void RangodeEdad(); */
+void CantidadAsistentes(Asistente Asis[], int n)
+{
+	system("clear");
+
+	int cont_si, cont_no;
+	cont_si = cont_no = 0;
+
+	for(int i = 0; i <= n; i++){
+		int resp = Asis[i].getOcupada();
+		if(resp == 1)
+			cont_si++;
+		else
+			cont_no++;
+	}
+
+	cout << "La cantidad de asistentes al evento fue de: " << cont_si << " personas." << endl;
+	cout << "Por el contrario, hubo: " << cont_no << " personas que no ocuparon su entrada." << endl;
+}
+
+void AsistentesComuna(Asistente Asis[], int n)
+{
+	system("clear");
+
+	char comuna[256];
+	cout << "Ingrese la comuna que busca: ";
+	cin.getline(comuna, 256);
+
+	for(int i = 0; i < n; i++){
+		Direccion Aux = Asis[i].getDireccionParticular();
+		string comuna_aux = Aux.getComuna();
+
+		if(comuna == comuna_aux)
+			Asis[i].verAsistente();
+	}
+}
+
+void ConvocatoriaArtistas(Artista Art[], int n)
+{
+	int dia;
+	cout << "Ingrese un día del evento (18, 19, 20): ";
+	cin >> dia;
+	cin.ignore(5, '\n');
+
+	if(dia > 17 && dia < 21){
+			for(int i = 0; i < n; i++){
+			Fecha Aux = Art[i].getFechaPresentacion();
+			if(dia == Aux.getDia())
+				Art[i].verArtista();
+		}
+	}
+	else
+		cout << "No hubo evento el día que nos indicó." << endl;
+}
+
+void TipodeEntradas(Asistente Asis[], int n)
+{
+	int entrada, cont1_1, cont1_2, cont2_1, cont2_2, cont3_1, cont3_2;
+	cont1_1 = cont1_2 = cont2_1 = cont2_2 = cont3_1 = cont3_2 = 0;
+
+	for(int i = 0; i < n; i++){
+		entrada = Asis[i].getTipoEntrada();
+
+		switch (entrada){
+			case 1:
+				if(Asis[i].getOcupada() == 1)
+					cont1_1++;
+				else
+					cont1_2++;
+				break;
+			case 2:
+				if(Asis[i].getOcupada() == 1)
+					cont2_1++;
+				else
+					cont2_2++;
+				break;
+			case 3:
+				if(Asis[i].getOcupada() == 1)
+					cont3_1++;
+				else
+					cont3_2++;
+				break;
+		}
+	}
+
+	cout << "Hubo un total de: " << cont1_1 + cont1_2 << " entradas <<Tipo 1>>" << endl;
+	cout << "\t Fueron ocupadas por: " << cont1_1 << " personas." << endl;
+	cout << "\t No fueron ocupadas por: " << cont1_2 << " personas." << endl;
+
+	cout << "Hubo un total de: " << cont2_1 + cont2_2 << " entradas <<Tipo 2>>" << endl;
+	cout << "\t Fueron ocupadas por: " << cont2_1 << " personas." << endl;
+	cout << "\t No fueron ocupadas por: " << cont2_2 << " personas." << endl;
+
+	cout << "Hubo un total de: " << cont3_1 + cont3_2 << " entradas <<Tipo 3>>" << endl;
+	cout << "\t Fueron ocupadas por: " << cont3_1 << " personas." << endl;
+	cout << "\t No fueron ocupadas por: " << cont3_2 << " personas." << endl;
+}
+
+void RangodeEdad()
+{
+	
+}
 
 //Menú
 void Menu(int n, int m)
 {
-	int opcion, cont_asis, cont_art;
+	int opcion, cont_art, cont_asis;
 	
-	if(n != 0)
-		cont_asis = n;
-	else
-		cont_asis = 0;
 	if(m != 0)
-		cont_art = m;
+		cont_art = n;
 	else
 		cont_art = 0;
+	if(n != 0)
+		cont_asis = m;
+	else
+		cont_asis = 0;
+	
 
 	//Aquí empieza el menú de selección.
 	do{
-		//Limpiamos la consola.
-		system("clear");
-
 		//Opciones a elegir.
+		cout << "--------------------------------------" << endl;
 		cout << "1. Cantidad de asistentes ..." << endl;
 		cout << "2. Asistentes por comuna ..." << endl;
 		cout << "3. Convocatoria de artistas ..." << endl;
@@ -62,22 +157,22 @@ void Menu(int n, int m)
 		cout << "5. Asistentes por rango de edad ..." << endl;
 		cout << "Eliga su opción >> ";
 		cin >> opcion;
-
+		cin.ignore(5, '\n');
 		switch(opcion){
 			case 0:
 				cout << "Saliendo.\n\t Muchas gracias." << endl;
 				break;
 			case 1:
-				//CantidadAsistentes();	
+				CantidadAsistentes(Asistentes, cont_asis);	
 				break;
 			case 2:
-				//AsistentesComuna();
+				AsistentesComuna(Asistentes, cont_asis);
 				break;
 			case 3:
-				//ConvocatoriaArtistas();
+				ConvocatoriaArtistas(Artistas, cont_art);
 				break;
 			case 4:
-				//TipodeEntradas();
+				TipodeEntradas(Asistentes, cont_asis);
 				break;
 			case 5:
 				//RangodeEdad();
@@ -149,7 +244,7 @@ void Lectura()
 		Aux3 = stoi(NAC_DIA);
 		Aux4 = stoi(NAC_MES);
 		Aux5 = stoi(NAC_ANHO);
-		Fecha FechaAux1(Aux1, Aux2, Aux3);
+		Fecha FechaAux1(Aux3, Aux4, Aux5);
 
 		string NombreCompleto = NOMBRE + PATERNO + MATERNO;
 
@@ -220,14 +315,14 @@ void Lectura()
 		}
 		Aux2 = stoi(DV);
 		RUT RunAux(Aux1, Aux2);
-		cout << Aux1 << "-" << Aux2 << endl;
+
 		string NombreCompleto = NOMBRES + " " + PATERNO + " " + MATERNO;
 
 		Aux3 = stoi(NAC_DIA);
 		Aux4 = stoi(NAC_MES);
 		Aux5 = stoi(NAC_ANHO);
-		Fecha FechaAux1(Aux1, Aux2, Aux3);
-		cout << Aux3 << "/" << Aux4 << "/" << Aux5 << endl;
+		Fecha FechaAux1(Aux3, Aux4, Aux5);
+
 		Aux6 = stoi(NRO);
 		Direccion DirAux(DIRECCION, Aux6, COMUNA);
 
@@ -244,6 +339,8 @@ void Lectura()
 
 		j++;
 	}
+	archivo.close();
+
 	Menu(i, j);
 }
 

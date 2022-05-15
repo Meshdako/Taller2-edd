@@ -44,6 +44,7 @@ void CantidadAsistentes(Asistente Asis[], int n)
 			cont_no++;
 	}
 
+	cout << "--------------------------------------" << endl;
 	cout << "La cantidad de asistentes al evento fue de: " << cont_si << " personas." << endl;
 	cout << "Por el contrario, hubo: " << cont_no << " personas que no ocuparon su entrada." << endl;
 }
@@ -53,7 +54,9 @@ void AsistentesComuna(Asistente Asis[], int n)
 	system("clear");
 
 	char comuna[256];
-	cout << "Ingrese la comuna que busca: ";
+
+	cout << "--------------------------------------" << endl;
+	cout << "Ingrese la comuna que busca (En  mayúsculas, ej: LA CISTERNA): ";
 	cin.getline(comuna, 256);
 
 	for(int i = 0; i < n; i++){
@@ -65,26 +68,46 @@ void AsistentesComuna(Asistente Asis[], int n)
 	}
 }
 
-void ConvocatoriaArtistas(Artista Art[], int n)
+void ConvocatoriaArtistas(Artista Art[], int n, Asistente Asis[], int m)
 {
-	int dia;
+	system("clear");
+
+	int dia, cont;
+	cont = 0;
+
+	cout << "--------------------------------------" << endl;
 	cout << "Ingrese un día del evento (18, 19, 20): ";
 	cin >> dia;
 	cin.ignore(5, '\n');
 
 	if(dia > 17 && dia < 21){
-			for(int i = 0; i < n; i++){
+		for(int i = 0; i < n; i++){
 			Fecha Aux = Art[i].getFechaPresentacion();
+			
 			if(dia == Aux.getDia())
 				Art[i].verArtista();
 		}
+		for(int j = 0; j < m; j++){
+			Fecha Aux = Asis[j].getFechaEvento();
+			
+			if(dia == Aux.getDia()){
+				if(Asis[j].getOcupada() == 1)
+					cont++;
+			}
+		}
+		cout << "--------------------------------------" << endl;
+		cout << "Para el día <<" << dia << ">> hubo un total de: " << cont << " asistentes" << endl;
 	}
 	else
 		cout << "No hubo evento el día que nos indicó." << endl;
+
+	
 }
 
 void TipodeEntradas(Asistente Asis[], int n)
 {
+	system("clear");
+
 	int entrada, cont1_1, cont1_2, cont2_1, cont2_2, cont3_1, cont3_2;
 	cont1_1 = cont1_2 = cont2_1 = cont2_2 = cont3_1 = cont3_2 = 0;
 
@@ -113,22 +136,43 @@ void TipodeEntradas(Asistente Asis[], int n)
 		}
 	}
 
+	cout << "--------------------------------------" << endl;
 	cout << "Hubo un total de: " << cont1_1 + cont1_2 << " entradas <<Tipo 1>>" << endl;
-	cout << "\t Fueron ocupadas por: " << cont1_1 << " personas." << endl;
-	cout << "\t No fueron ocupadas por: " << cont1_2 << " personas." << endl;
+	cout << "\t Fue ocupada por: " << cont1_1 << " personas." << endl;
+	cout << "\t No fue ocupada por: " << cont1_2 << " personas." << endl;
 
 	cout << "Hubo un total de: " << cont2_1 + cont2_2 << " entradas <<Tipo 2>>" << endl;
-	cout << "\t Fueron ocupadas por: " << cont2_1 << " personas." << endl;
-	cout << "\t No fueron ocupadas por: " << cont2_2 << " personas." << endl;
+	cout << "\t Fue ocupada por: " << cont2_1 << " personas." << endl;
+	cout << "\t No fue ocupada por: " << cont2_2 << " personas." << endl;
 
 	cout << "Hubo un total de: " << cont3_1 + cont3_2 << " entradas <<Tipo 3>>" << endl;
-	cout << "\t Fueron ocupadas por: " << cont3_1 << " personas." << endl;
-	cout << "\t No fueron ocupadas por: " << cont3_2 << " personas." << endl;
+	cout << "\t Fue ocupada por: " << cont3_1 << " personas." << endl;
+	cout << "\t No fue ocupada por: " << cont3_2 << " personas." << endl;
 }
 
-void RangodeEdad()
+void RangodeEdad(Asistente Asis[], int n)
 {
+	system("clear");
+
+	int cont1, cont2, cont3;
+	cont1 = cont2 = cont3 = 0;
+
+	for(int i = 0; i < n; i++){
+		Fecha Aux = Asis[i].getFechaNacimiento();
+		int edad = 2022 - Aux.getAnho();
+
+		if(edad > 0 && edad < 19)
+			cont1++;
+		if(edad > 18 && edad < 29)
+			cont2++;
+		if(edad > 28 && edad < 100)
+			cont3++;
+	}
 	
+	cout << "--------------------------------------" << endl;
+	cout << "El total de personas con edad dentro del rango [0-18] es de: " << cont1 << endl;
+	cout << "El total de personas con edad dentro del rango [19-28] es de: " << cont2 << endl;
+	cout << "El total de personas con edad dentro del rango [28-99] es de: " << cont3 << endl;
 }
 
 //Menú
@@ -169,13 +213,13 @@ void Menu(int n, int m)
 				AsistentesComuna(Asistentes, cont_asis);
 				break;
 			case 3:
-				ConvocatoriaArtistas(Artistas, cont_art);
+				ConvocatoriaArtistas(Artistas, cont_art, Asistentes, cont_asis);
 				break;
 			case 4:
 				TipodeEntradas(Asistentes, cont_asis);
 				break;
 			case 5:
-				//RangodeEdad();
+				RangodeEdad(Asistentes, cont_asis);
 				break;
 			deafult:
 				break;

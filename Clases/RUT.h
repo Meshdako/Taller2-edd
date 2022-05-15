@@ -4,19 +4,19 @@
 class RUT
 {
 	private:
-		int run;
+		long run;
 		int dv;
 	public:
 		//Constructores.
 		RUT();
-		RUT(int, int);
+		RUT(long, int);
 
 		//Setters.
 		void setRun(int x){run = x;}
 		void setDv(int x){dv = x;}
 
 		//Getters.
-		int getRun(){return run;}
+		long getRun(){return run;}
 		int getDv(){return dv;}
 
 		//Métodos

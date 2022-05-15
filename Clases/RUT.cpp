@@ -9,10 +9,10 @@ RUT::RUT()
 	dv = 0;
 }
 
-RUT::RUT(int a, int b)
+RUT::RUT(long a, int b)
 {
 	run = a;
-	dv = a;
+	dv = b;
 }
 
 void RUT::verRUT()

@@ -18,6 +18,7 @@ Persona::Persona(string a, RUT b, Direccion c, Fecha d)
 
 void Persona::verPersona()
 {
+	cout << "--------------------------------------" << endl;
 	cout << "Nombre: " << nombre << endl;
 	RUN.verRUT();
 	direccionParticular.verDireccion();

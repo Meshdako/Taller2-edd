@@ -33,4 +33,3 @@ void Asistente::verAsistente()
 	else
 		cout << "Si" << endl;
 }
-

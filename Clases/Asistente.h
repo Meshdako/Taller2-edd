@@ -24,6 +24,7 @@ class Asistente : public Persona
 		bool getOcupada(){return ocupada;}
 
 		void verAsistente();
+		int EntradaOcupada();
 };
 
 #endif //ASISTENTE_H
